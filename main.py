@@ -7,7 +7,7 @@ def readfile():
 #number of lines
 def nlines():
 	nl = len(f.readlines())
-	return nl
+	return nl+1
 
 #main
 def main():
