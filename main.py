@@ -1,6 +1,6 @@
 #read file "f"
 def readfile():
-	fn = str(raw_input("Escreva o nome do arquivo (exemplo: arquivos.txt): "))
+	fn = str(input("Escreva o nome do arquivo (exemplo: arquivos.txt): "))
 	global f
 	f = open(fn,"r")
 
@@ -13,10 +13,14 @@ def nlines():
 def main():
 	readfile()
 	
-	for li in f.readlines():
-		print(li)
+	ff = open("ipfinal.txt", "w")
 	
+	for li in f.readlines():
+		ff.write("%s" %(li))
+		
 	f.close()
+	ff.close()
+	
 	
 main()
 
