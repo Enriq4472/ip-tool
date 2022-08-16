@@ -20,6 +20,11 @@ def main():
 	for li in f.readlines():
 		ff.write("%s" %(li))
 		
+	"""
+	ip.replace("\","")
+	ip.replace("n","")
+	"""
+	
 	f.close()
 	ff.close()
 	
