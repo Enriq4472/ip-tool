@@ -1,3 +1,5 @@
+from valid import * #import function vld()
+
 #read file "f"
 def readfile():
 	fn = str(input("Escreva o nome do arquivo (exemplo: arquivos.txt): "))
