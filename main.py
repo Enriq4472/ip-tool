@@ -1,4 +1,5 @@
 from valid import * #import function vld()
+from newline_remover import * #import function nlrm()
 
 #read file "f"
 def readfile():
@@ -18,17 +19,12 @@ def main():
 	ff = open("ipfinal.txt", "w")
 	
 	for li in f.readlines():
-		#ff.write("%s" %(li))
-		
 		#Removing "\n" and sending to vld()
-		li.replace("\n","")
+		nlrm(li)
+
+		ff.write("%s" %(li))
 		
 		
-	"""
-	ip.replace("\","")
-	ip.replace("n","")
-	"""
-	
 	f.close()
 	ff.close()
 	
