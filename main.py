@@ -18,7 +18,11 @@ def main():
 	ff = open("ipfinal.txt", "w")
 	
 	for li in f.readlines():
-		ff.write("%s" %(li))
+		#ff.write("%s" %(li))
+		
+		#Removing "\n" and sending to vld()
+		li.replace("\n","")
+		
 		
 	"""
 	ip.replace("\","")
