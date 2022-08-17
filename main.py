@@ -1,5 +1,4 @@
 from valid import * #import function vld()
-from newline_remover import * #import function nlrm()
 
 #read file "f"
 def readfile():
@@ -20,9 +19,9 @@ def main():
 	
 	for li in f.readlines():
 		#Removing "\n" and sending to vld()
-		nlrm(li)
 
-		ff.write("%s" %(li))
+		ff.write("%s" %(li.strip()))
+		#"strip() will return a copy of the string with the leading and trailing characters removed."
 		
 		
 	f.close()
