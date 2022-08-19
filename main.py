@@ -19,8 +19,11 @@ def main():
 	
 	for li in f.readlines():
 		#Removing "\n" and sending to vld()
-
-		ff.write("%s" %(li.strip()))
+		li=li.strip()
+		
+		print(vld(li))
+		
+		#ff.write("%s" %(li.strip()))
 		#"strip() will return a copy of the string with the leading and trailing characters removed."
 		
 		
