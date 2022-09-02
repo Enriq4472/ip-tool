@@ -19,6 +19,7 @@ def main():
 	
 	ff = open("ipfinal.txt", "w")
 	
+	ipcount=0
 	for li in f.readlines():
 		#Removing "\n" and sending to vld()
 		li=li.strip()
@@ -27,18 +28,23 @@ def main():
 		li = hdlr(li)
 		
 		#ipclass = class or invalid
-		if(vld(li)==True):
+		if(vld(li)==1):
 			ipclass = clss(li)
 		else:
 			ipclass = 'unknown'
 			
+		ipline[ipcount] = ipclass
+		ipcount++
+		
+		'''
 		#Writing value in file ipfinal.txt
-		ff.write(li + " - class: " + ipclass + "\n")
+		#ff.write(li + " - class: " + ipclass + "\n")
 		
 		#print(vld(li))
 		
 		#ff.write("%s" %(li.strip()))
 		#"strip() will return a copy of the string with the leading and trailing characters removed."
+		'''
 		
 		
 	f.close()

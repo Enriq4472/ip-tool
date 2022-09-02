@@ -1,10 +1,10 @@
-def vld(ipstr):
-	ip = ipstr.split(".")
+def vld(ip):
+	#ip = ipstr.split(".")
 	
 	for num in range(0, len(ip)):
 		
 		if (ip[num]<0 or ip[num]>255):
-			return False
+			return 0
 			break
 	
-	return True
+	return 1
