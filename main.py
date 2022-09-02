@@ -1,4 +1,5 @@
 from valid import * #import function vld()
+from classip import * #import funcion clss()
 
 #read file "f"
 def readfile():
@@ -21,7 +22,9 @@ def main():
 		#Removing "\n" and sending to vld()
 		li=li.strip()
 		
-		print(vld(li))
+		ipclass = clss(li)
+		
+		#print(vld(li))
 		
 		#ff.write("%s" %(li.strip()))
 		#"strip() will return a copy of the string with the leading and trailing characters removed."
