@@ -21,8 +21,10 @@ def main():
 	
 	ipcount=0
 	for li in f.readlines():
+		rawip = li 
 		#Removing "\n" and sending to vld()
 		li=li.strip()
+		rawip = rawip.strip()
 		
 		#Handling the ip values
 		li = hdlr(li)
@@ -31,21 +33,16 @@ def main():
 		if(vld(li)==1):
 			ipclass = clss(li)
 		else:
-			ipclass = 'unknown'
+			ipclass = '?'
 			
-		ipline[ipcount] = ipclass
-		ipcount++
 		
-		'''
-		#Writing value in file ipfinal.txt
-		#ff.write(li + " - class: " + ipclass + "\n")
+		ff.write("%s - class: %c\n" %(rawip, ipclass))
 		
 		#print(vld(li))
 		
 		#ff.write("%s" %(li.strip()))
 		#"strip() will return a copy of the string with the leading and trailing characters removed."
-		'''
-		
+	
 		
 	f.close()
 	ff.close()
