@@ -30,10 +30,10 @@ def main():
 		if(vld(li)==True):
 			ipclass = clss(li)
 		else:
-			ipclass = '?'
+			ipclass = 'unknown'
 			
-		#Writing value in file
-		
+		#Writing value in file ipfinal.txt
+		ff.write(li + " - class: " + ipclass + "\n")
 		
 		#print(vld(li))
 		
