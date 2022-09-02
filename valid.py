@@ -6,7 +6,7 @@ def vld(ipstr):
 		ip[num]=int(ip[num])
 		
 		if (ip[num]<0 or ip[num]>255):
-			return 0
+			return False
 			break
 	
-	return 1
+	return True

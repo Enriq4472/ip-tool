@@ -1,3 +1,4 @@
+from handlerip import * #import function hdlr()
 from valid import * #import function vld()
 from classip import * #import funcion clss()
 
@@ -21,6 +22,13 @@ def main():
 	for li in f.readlines():
 		#Removing "\n" and sending to vld()
 		li=li.strip()
+		
+		#Handling the ip values
+		
+		
+		
+		#if(vld(li)==True):
+			
 		
 		ipclass = clss(li)
 		
