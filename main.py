@@ -1,4 +1,4 @@
-from handlerip import * #import function hdlr()
+from handler import * #import function hdlr()
 from valid import * #import function vld()
 from classip import * #import funcion clss()
 
@@ -24,7 +24,7 @@ def main():
 		li=li.strip()
 		
 		#Handling the ip values
-		
+		li = hdlr(li)
 		
 		
 		#if(vld(li)==True):
