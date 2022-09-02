@@ -26,11 +26,14 @@ def main():
 		#Handling the ip values
 		li = hdlr(li)
 		
-		
-		#if(vld(li)==True):
+		#ipclass = class or invalid
+		if(vld(li)==True):
+			ipclass = clss(li)
+		else:
+			ipclass = '?'
 			
+		#Writing value in file
 		
-		ipclass = clss(li)
 		
 		#print(vld(li))
 		
