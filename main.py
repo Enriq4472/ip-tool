@@ -38,12 +38,8 @@ def main():
 		
 		ff.write("%s - class: %c\n" %(rawip, ipclass))
 		
-		#print(vld(li))
-		
-		#ff.write("%s" %(li.strip()))
 		#"strip() will return a copy of the string with the leading and trailing characters removed."
 	
-		
 	f.close()
 	ff.close()
 	

@@ -1,5 +1,4 @@
 def vld(ip):
-	#ip = ipstr.split(".")
 	
 	for num in range(0, len(ip)):
 		
