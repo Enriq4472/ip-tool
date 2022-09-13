@@ -2,7 +2,7 @@ def clss(ip):
 	if(ip[0]>=1 and ip[0]<=127):
 		return 'A'
 	
-	elif(ip[0]>=28 and ip[0]<=191):
+	elif(ip[0]>=128 and ip[0]<=191):
 		return 'B'
 	
 	elif(ip[0]>=192 and ip[0]<=223):
